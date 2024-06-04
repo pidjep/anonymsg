@@ -1,0 +1,101 @@
+/* CSS */
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(to bottom right, #ff0066, #ff6600);
+  font-family: "Avenir Next", Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.message-box {
+  background: linear-gradient(to bottom, #ffd5d5, #ffa7a7);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  background-image: url("https://i.ibb.co/9q213Tt/436335529-753266976922119-5597919955374718248-n.jpg");
+  background-size: cover;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.username {
+  font-weight: bold;
+}
+
+.prompt {
+  font-style: italic;
+  color: #555;
+  margin-top: 5px;
+}
+
+.message-input {
+  width: 100%;
+  height: 120px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  resize: none;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.send-button {
+  width: 100%;
+  height: 40px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  box-sizing: border-box;
+}
+
+.send-button:hover {
+  background-color: #333;
+}
+
+@media screen and (max-width: 600px) {
+  .message-box {
+    padding: 10px;
+  }
+
+  .message-input,
+  .send-button {
+    width: 100%;
+    padding: 10px;
+  }
+}
